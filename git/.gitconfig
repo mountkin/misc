@@ -1,24 +1,24 @@
 [user]
-	name = Shijiang Wei
-	email = mountkin@gmail.com
+  name = Shijiang Wei
+  email = mountkin@gmail.com
 [core]
-	editor = vim
-	bare = false
-	logAllRefUpdates = true
-	fileMode = true
-	quotepath = false
+  editor = vim
+  bare = false
+  logAllRefUpdates = true
+  fileMode = true
+  quotepath = false
 [diff]
-	external = git-diff-wrapper
+  external = git-diff-wrapper
 [pager]
-    diff = 
+  diff = 
 [color]
-	diff = true
-    status = auto
-    branch = auto
-    interactive = auto
+  diff = true
+  status = auto
+  branch = auto
+  interactive = auto
 [merge]
-	tool = vimdiff
+  tool = vimdiff
 [init]
-	templatedir = ~/.git_template
+  templatedir = ~/.git_template
 [alias]
-	ctags = !.git/hooks/ctags
+  ctags = !.git/hooks/ctags
