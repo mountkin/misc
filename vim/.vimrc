@@ -2,8 +2,8 @@ set autoindent smartindent ts=2 sw=2 expandtab
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
+colorschem evening
 call vundle#begin()
-
 Plugin 'gmarik/Vundle.vim'
 Plugin 'fatih/vim-go'
 Plugin 'Valloric/YouCompleteMe'
@@ -12,8 +12,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'vim-scripts/c.vim'
 Plugin 'tpope/vim-fugitive'
 Bundle 'ervandew/supertab'
-
-
+Plugin 'nsf/gocode', {'rtp': 'vim/'}
 call vundle#end()            " required
 filetype plugin indent on    " required
 
