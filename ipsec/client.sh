@@ -12,6 +12,8 @@ EOF
 
 . /etc/vpn.conf
 
+yum install -y strongswan xl2tpd
+
 cat > /etc/ipsec.conf <<EOF
 # ipsec.conf - strongSwan IPsec configuration file
 
