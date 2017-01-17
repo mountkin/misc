@@ -140,6 +140,7 @@ done
 echo "VPN connection failed"
 exit 1
 EOF
+chmod +x /etc/vpn.sh
 
 systemctl enable vpn.service
 systemctl start vpn.service
