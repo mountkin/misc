@@ -1,0 +1,11 @@
+#!/bin/sh
+set -e
+PATH="/usr/local/bin:$PATH"
+dir=$(git rev-parse --git-dir)
+cd $(dirname $dir)
+
+for f in $(git status --porcelain|grep '^??'|awk '{print $2}'); do
+	if file "$f"|grep -Pq 'ELF.+executable' && ! grep -q "$f" .gitignore; then
+		echo "$f" >>.gitignore
+	fi
+done

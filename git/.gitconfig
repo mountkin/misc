@@ -22,7 +22,8 @@
 [init]
 	templatedir = ~/.git_template
 [alias]
-	ctags = !.git/hooks/ctags
+  ctags = !.git/hooks/ctags
+  ignore = /usr/bin/git-ignore
 [format]
 	signoff = true
 [commit]
